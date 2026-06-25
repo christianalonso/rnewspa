@@ -1,0 +1,22 @@
+td,th{
+  padding: 2px 5px;
+  border: 2px solid #000;
+}
+.my-table{
+  border: 2px solid #000;
+  width: 100%;
+}
+.print{
+  padding: 3px;
+}
+.content-tables{
+  width: 430px;
+}
+
+.content-tables > table {
+  margin-bottom: 15px;
+}
+
+.content-tables > table:last-child{
+  margin-bottom: 0;
+}
