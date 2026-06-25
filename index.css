@@ -1,6 +1,10 @@
+html{
+  min-height: 100vh;
+}
 td,th{
   padding: 2px 5px;
   border: 2px solid #000;
+  text-align: center;
 }
 .my-table{
   border: 2px solid #000;
@@ -8,13 +12,15 @@ td,th{
 }
 .print{
   padding: 3px;
+  display: flex;
+  justify-content: center;
 }
 .content-tables{
-  width: 430px;
+  width: 550px;
 }
 
 .content-tables > table {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .content-tables > table:last-child{
