@@ -5,7 +5,6 @@ const InputsApp = (
         handleTableApp,
         tablesApp,
         index,
-        isLimit,
         handleTipoCaja,
         refTipoCaja,
         refradioButtons

@@ -19,7 +19,7 @@ const App = () => {
   
       try {
         
-        const template = `${window.location.origin}/template.html`
+        const template = `${import.meta.env.BASE_URL}/template.html`
         const response = await fetch(template)
 
         if(!response.ok){
