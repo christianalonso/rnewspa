@@ -34,13 +34,13 @@ const App = () => {
         node.append(createTableRemonte(data))
 
         const newPage = window.open("","_blank")
+        newPage.document.open()
         newPage.document.write(doc.documentElement.innerHTML)
         newPage.document.close()
 
         newPage.onload = () => {
           newPage.focus()
           newPage.print()
-          newPage.close()
         }
 
       } catch (error) {

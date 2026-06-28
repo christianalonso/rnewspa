@@ -164,3 +164,7 @@ box-shadow: 0px 5px 7px rgb(27, 27, 27);
   margin-bottom: 3px;
 }
 
+.pointer-cursor{
+  cursor: pointer;
+}
+

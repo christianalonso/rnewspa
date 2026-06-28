@@ -59,14 +59,17 @@ const Switch = ({index, tipoCaja,refradioButtons}) => {
                                   : refradioButtons.current.delete(indice)
                                 }
                                } 
-                              className="form-check-input"
+                              className="form-check-input pointer-cursor"
                               type="radio"
                               value={item.value}
                               name={"switch-button-"+index}
                               { ...(indice === 0 && {defaultChecked:true}) }
                               id={`switch${index}_${indice}`}
                             />
-                            <label className="form-check-label" htmlFor={`switch${index}_${indice}`}>
+                            <label 
+                              className="form-check-label pointer-cursor fw-bolder"
+                              htmlFor={`switch${index}_${indice}`}
+                            >
                                 {item.label}
                             </label>
                         </div>

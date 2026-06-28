@@ -18,33 +18,34 @@ const InputsApp = (
 
         const isOk = () => {
 
+            const flag = false
             const esUnNumero = (value) => /^\d+$/.test(value)
 
             if(refTipoCaja.current.value === "Tipo"){
-                return false
+                return flag
             }
 
             if(refCalibre.current.value === ""){
-                return false
+                return flag
             }
 
             if(!esUnNumero(refCalibre.current.value)){
-                return false
+                return flag
             }
 
             if(refSaldo.current.value === ""){
-                return false
+                return flag
             }
 
             if(!esUnNumero(refSaldo.current.value)){
-                return false
+                return flag
             }
 
             if(refnroPallet.current.value === ""){
-                return false
+                return flag
             }
 
-            return true
+            return !flag
 
         }
 
